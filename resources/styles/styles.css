@@ -1,0 +1,136 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Otomanopee One';
+}
+
+a{
+    color: black;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+/* Mission */
+#mission{
+    display: flex;
+    align-items: center;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+}
+
+#mission .text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+/* Portfolio */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio .image-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#portfolio .image-container figure{
+    display:flex;
+   align-items: center;
+}
+
+#portfolio .image-container figure figcaption{
+    text-align: center;
+}
+
+
+#portfolio .image-container figure img{
+    margin-right: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+/* Investment */
+#investment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#investment .person{
+    margin: 20px;
+    text-align: center;
+}
+#investment .person img{
+    width: 200px;
+    height: 300px;
+}
+
+#investment .team {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+footer address{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:730px) {
+    #investment .team{
+        flex-direction: column;
+    }
+    #portfolio .image-container figure img{
+        display: none;
+    }
+    body{
+        font-size: 10px;
+    }
+    
+}
